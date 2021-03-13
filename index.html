@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<title>Introduction to Minze</title>
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+	</head>
+<body>
+	<nav>
+	<ul>
+	<li><a href="#intro">About Me</a></li>
+	<li><a href="#lifethusfar">Life Thus Far</a></li>
+	<li><a href="#jc">Life in Junior College</a></li>
+	<li><a href="#uni">University & Projects</a></li>
+	<li><a href="#connect">Connect</a><li>
+	</ul>	
+	</nav>
+
+
+ <h1>
+  &nbsp;&nbsp;&nbsp;&nbsp; Teh Min Ze
+  </h1>
+</div>
+
+<div class="bod">	
+ 
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="images/grass.jpg" width=105% onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/cdo.jpg" width=105% onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/balloon.jpg" width=105% onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/trip.jpg" width=105% onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content centerimage">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/grass.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/cdo.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/balloon.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/trip.jpg" style="width:30%">
+    </div>
+
+ <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="images/grass.jpg" onclick="currentSlide(1)" alt="Treetop Walk">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/cdo.jpg" onclick="currentSlide(2)" alt="Red Beret Presentation Ceremony">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/balloon.jpg" onclick="currentSlide(3)" alt="Birthday Celebration">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/trip.jpg" onclick="currentSlide(4)" alt="Exchange Trip to China">
+    </div>
+  </div>
+</div>
+
+
+<p>click to view...</p>
+
+
+<div class="textalign">
+<header id="intro">
+<h2>
+  About Me
+  </h2>
+  </header>
+  <p style="font-family:courier new;">
+    Hello everyone, welcome to my webpage! Although there is not much content available right now, <br>
+    I intend to continue updating it as I learn more about web development. I'm currently taking <br>
+    courses online to learn about computer science and that's how I was able to create this webpage <br>
+    using my newly acquired skills. Through this webpage, I hope you gain a better understanding of me.<br>
+    Enjoy!
+  </p>
+
+<div id="life">
+<header id="lifethusfar">  
+<h2>
+  Life Thus Far
+  </h2>
+  </header>
+  <p style="font-family:courier new;">
+    Ever since I ORD-ed in nov 2020, I have been working part time and learning more about computer science. <br>
+    Since the beginning of this year, I have also started looking for internship opportunities in this sector. <br>
+    It hasn't been easy trying to learn new programming languages and concepts with no prior background <br>
+    knowledge but i find this subject rather interesting and have been putting in a lot of effort to grasp <br>
+    the concepts while also juggling work and other commitments.  
+  </p>
+</div>
+
+<div id="life">
+<header id="jc">
+<h2>
+  Life in Junior College
+  </h2>
+  </header>
+  <p style="font-family:courier new;"> 
+    Looking back, 2 years of JC went by very quickly. Those 2 years were packed with many memorable experiences <br>
+    and I was fortunate to be a part of the Student Council which gave me even more opportunities to learn and <br>
+    grow. The numerous hours spent planning for events, working on proposals and conducting debriefing sessions <br>
+    has undoubtedly honed my critical thinking and public speaking skills tremendously. <br>
+  </p>
+</div>
+
+
+<div id="life1">
+<header id="uni">
+<h2>
+  University & Projects
+  </h2>
+  </header>
+  <p style="font-family:courier new;">
+    To be continued...
+  </p>
+</div>
+
+
+
+
+</div>
+<header id="connect">
+	<footer>
+	<h3>Connect With Me</h3>
+	<p>Email: min_ze@live.com</a><br>
+	Instagram: @_.zeeee</a><p>
+	</footer>
+	
+
+</div>
+</body>    
+</html>
