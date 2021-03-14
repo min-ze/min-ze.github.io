@@ -61,13 +61,18 @@ ul{
 	overflow: hidden;
 	display: flex;
 	background-color: #F5F5DC;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 li {
 	float: left;
+	border-right: 1px #000000;
 }
 
+li:last child {
+	border-right: none;
+}
+	
 li a {
 	display: block;	
 	color: #000000;
@@ -104,9 +109,9 @@ h1 {
 	margin-left: 0px;
 	margin-top: 10px;
 	margin-bottom: 5px;
-	text-align: center;
-	
+	text-align: center;	
 }
+
 
 
 body {
