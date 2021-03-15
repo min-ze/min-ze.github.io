@@ -283,6 +283,19 @@ footer {
 	font-style: oblique;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 </style>
 
@@ -433,12 +446,19 @@ About Me
 	 that I was able to give the freshmen a better or similar experience to that of my <br>
 	 own when I was a freshmen myself. 
 	</p>
-	
+
+<div class="row1">
+	<div class="column1">
 <img src="images/ori1.jpg" alt="Photo from orientation">
+	</div>
+	<div class="column1">
 <img src="images/ori2.jpg" alt="Photo from orientation">
+	</div>	
+	<div class="column1">	
 <img src="images/ori3.jpg" alt="Photo from orientation">	
-	
-	
+	</div>
+</div>
+
  <p style="font-family:garamond;"> 
 	Another unforgettable experience would be my overseas exchange trip to Chongqing, <br>
 	 China. Together with my fellow student councilors, we were able to meet and <br>
