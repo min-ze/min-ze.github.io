@@ -1,0 +1,17 @@
+sort1 uses: TODO
+bubble sort
+
+How do you know?: TODO
+difference between upper and lower bound is the biggest
+
+sort2 uses: TODO
+merged sort
+minimal difference between upper and lower bound and is the fastest of all 3 
+
+How do you know?: TODO
+
+sort3 uses: TODO
+selection sort
+
+How do you know?: TODO
+minimal difference between upper and lower bound but is slower than sort2
